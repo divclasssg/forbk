@@ -8,6 +8,7 @@
       end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers: true
     }
   })
@@ -24,6 +25,7 @@
       end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers: true
     }
   })
@@ -40,6 +42,7 @@
       end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers:  true
     }
   })
@@ -57,21 +60,22 @@
     scrollTrigger: {
       trigger: '.t3',
       start: 'center center',
-      end: () => '+=' + innerHeight,
+      end: () => '+=' + innerHeight * 5,
       // end: 'bottom +=100%',
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers: true
     }
   })
-  t3.fromTo('.text-so', {opacity: 0}, {opacity: 1, y: -10, duration: 10})
-  t3.fromTo('.text-when', {opacity: 0}, {opacity: 1, y: -10, duration: 10})
-  t3.from('.when-answer', {opacity: 0, duration: 10})
-  t3.to('.text-so, .text-when', {opacity: 0, duration: 10})
-  t3.to('.when-answer, .when-answer p', {fontSize: '2rem', display: 'flex', y: -20, duration: 10})
-  t3.fromTo('.text-where', {opacity: 0}, {opacity: 1, y: -10, duration: 10})
-  t3.fromTo('.text-where-answer', {opacity: 0}, {opacity: 1, y: -10, duration: 10})
-  t3.from('.dark-background', {x: -50 + '%', y: -50 + '%', transform: 'scale(0)', duration: 10})
+  t3.fromTo('.text-so', {opacity: 0}, {opacity: 1, y: -10})
+  t3.fromTo('.text-when', {opacity: 0}, {opacity: 1, y: -10})
+  t3.from('.when-answer', {opacity: 0})
+  t3.to('.text-so, .text-when', {opacity: 0})
+  t3.to('.when-answer, .when-answer p', {fontSize: '2rem', display: 'flex', y: -80})
+  t3.fromTo('.text-where', {opacity: 0}, {opacity: 1, y: -10})
+  t3.fromTo('.text-where-answer', {opacity: 0}, {opacity: 1, y: -10})
+  t3.from('.dark-background', {x: -50 + '%', y: -50 + '%', transform: 'scale(0)'})
 
   //t4
   let t4 = gsap.timeline({
@@ -81,6 +85,7 @@
       end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers: true
     }
   })
@@ -91,9 +96,10 @@
     scrollTrigger: {
       trigger: '.t5',
       start: 'center center',
-      end: () => '+=' + innerHeight * 5,
+      end: () => '+=' + innerHeight * 4,
       scrub: 1,
       pin: true,
+      anticipatePin: 1
       // markers: true
     }
   })

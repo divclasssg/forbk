@@ -49,7 +49,7 @@ strong {
 .img-bride {
   position: absolute;
   top: 0;
-  left: -248px;
+  left: 0;
   width: 100vh;
   height: 100%;
   object-fit: cover;
@@ -116,9 +116,6 @@ strong {
 /* x 32% */
 }
 
-.t3 {
-  padding-top: 8rem;
-}
 .t3 p {
   font-size: 4rem;
   font-weight: 100;
