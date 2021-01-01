@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html { font-size: 8px; }
+:root {
+  --color-black: #1d1d1f;
+}
+
+body {
+  font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","Noto Sans KR", "MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+strong {
+  font-weight: 900;
+}
+.main {
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.flex-justify-col-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.column {
+  flex-direction: column;
+}
+
+.img-groom,
+.img-bride {
+  position: absolute;
+  top: 0;
+  left: -248px;
+  width: 100vh;
+  height: 100%;
+  object-fit: cover;
+}
+.img-bride {
+  left: 0;
+}
+.greeting {
+  position: absolute;
+  bottom: 0;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.75px;
+  line-height: 1.1;
+  color: #fff;
+  padding: 1em 0.3em;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.greeting span,
+.greeting strong {
+  display: block;
+}
+.greeting strong {
+  font-size: 8rem;
+}
+.greeting.groom {
+  left: 0;
+}
+.greeting.bride {
+  right: 0;
+}
+
+.we-get-married {
+  font-size: 9rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  transform-origin: center center;
+}
+.we-get-married strong {
+  display: block;
+}
+.img-together-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-together-wrapper .img-groom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+  /* x -67.9 */
+}
+.img-together-wrapper .img-bride {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate3d(100%, 0, 0);
+/* x 32% */
+}
+
+.t3 {
+  padding-top: 8rem;
+}
+.t3 p {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+}
+.when-answer {
+  justify-content: center;
+}
+.when-answer p strong {
+  font-weight: 500;
+}
+p.text-where-answer {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.dark-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  background: #fff;
+  border-radius: 50%;
+  width: 150vh;
+  height: 150vh;
+}
+
+.img-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  border-radius: 0;
+  width: 100vh;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 1;
+}
+.text-wrapper p {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+  line-height: 1.2;
+}
+.img-together2 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 70%;
+  object-fit: cover;
+}
