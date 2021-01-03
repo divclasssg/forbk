@@ -1,5 +1,13 @@
 @charset "utf-8";
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
 
+html {
+  height: -webkit-fill-available;
+}
 html { font-size: 8px; }
 :root {
   --color-black: #1d1d1f;
@@ -30,10 +38,10 @@ section {
 }
 .content {
   position: relative;
-  /* height: 100vh;
-  min-height: 100vh; */
-  height: 120vh;
-  height: var(--vh, 1vh) * 120;
+  height: 100vh;
+  min-height: 100vh;
+  /* height: 120vh;
+  height: var(--vh, 1vh) * 120; */
   overflow: hidden;
 }
 .sticky-wrapper {
