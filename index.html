@@ -6,77 +6,106 @@
   <title>Welcome!</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/resest.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main class="main">
-    <section class="section t0">
-      <h1 class="greeting groom">
-        <span class="greeting-text-0">안녕하세요.</span>
-        <strong class="greeting-text-1">신랑</strong>
-        <strong class="greeting-text-2">정부길</strong>
-        <span class="greeting-text-3">인사드립니다.</span>
-      </h1>
-      <img src="images/groom.jpg" alt="groom" class="img-groom">
-    </section>
-
-    <section class="section t1">
-      <h1 class="greeting bride">
-        <span class="greeting-text-0">안녕하세요.</span>
-        <strong class="greeting-text-1">신부</strong>
-        <strong class="greeting-text-2">박수현</strong>
-        <span class="greeting-text-3">인사드립니다.</span>
-      </h1>
-      <img src="images/bride.jpg" alt="bride" class="img-bride">
-    </section>
-
-    <section class="section t2">
-      <!-- <div class="img-together-wrapper">
-        <img src="images/groom.jpg" alt="" class="img-groom">
-        <img src="images/bride.jpg" alt="" class="img-bride">
-      </div> -->
-      <img src="images/pic0.jpg" alt="" class="img-together">
-      <div class="flex-center">
-        <h2 class="we-get-married">우리<strong>결혼</strong>해요<br />!!</h2>
+    <section>
+      <div class="content">
+        <div class="invitation">
+          <h1>안녕하세요.<br>어쩌구 저쩌구</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus quidem molestiae beatae vero autem atque, nesciunt suscipit reiciendis corrupti.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section t3" style="background: #1d1d1f;">
+    <section class="greeting-bk t0">
+      <div class="content">
+        <figure class="img-groom"></figure>
+        <h1 class="greeting-groom text-vetical">
+          신랑<br /><strong>정부길</strong>
+        </h1>
+      </div>
+    </section>
 
-        <div class="">
-          <div style="position:absolute;top: 50%;transform: translate3d(0, -50%, 0);width:100%;">
-            <p class="text-so">그래서</p>
-            <p class="text-when">언제냐구요?</p>
-            <div class="when-answer">
-              <p class="text-when-date">
-                <strong>2021</strong>년 <strong>2</strong>월 <strong>21</strong>일
-              </p>
-              <p class="text-when-day"><strong>토요일</strong></p>
-              <p class="text-when-time">PM <strong>12:30</strong></p>
-            </div>
-          </div>
-          <div style="position:absolute;top: 50%;transform: translate3d(0, -50%, 0);width:100%;">
-            <p class="text-where">어디서?</p>
-            <p class="text-where-answer">바로<br />여기</p>
-            <div class="dark-background"></div>
+    <section class="greeting-sh t1">
+      <div class="greeting-sh-content">
+        <div class="sticky">
+          <figure class="img-bride"></figure>
+          <h1 class="greeting-bride text-vetical">
+            신부<br /><strong>박수현</strong>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-transition">
+      <div class="greeting-bksh t2">
+        <div class="content">
+          <figure class="img-bksh"></figure>
+          <div class="text-wrapper">
+            <h1 class="greeting-together text-vetical">우리 <strong>결혼</strong>해요</h1>
           </div>
         </div>
-    </section>
-
-    <section class="section t4">
-      <img src="images/map.png" alt="" class="img-map">
-    </section>
-
-    <section class="section t5">
-      <div class="text-wrapper">
-        <p class="text-well">저희 잘 살께요.</p>
-        <p class="text-like-this">이렇게!!</p>
       </div>
-      <img src="images/together2.jpg" alt="" class="img-together2">
+    </seciton>
+
+    <section class="t3" style="height: 100vh">
+      <div class="info-transition">
+        <div class="content info-text">
+          <div class="info-text-wrapper col">
+            <p class="text-info-so">그래서</p>
+            <p class="text-info-when">언제나구요?</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div style="height: 200vh;"></div>
+    <section class="info-text t4" style="background:#f1f1f1;">
+      <div class="content">
+        <div class="info-text-wrapper col">
+          <div class="info-text-when-content">
+            <p><strong>2021</strong>년 <strong>2</strong>월 <strong>27</strong>일</p>
+            <p><strong>토</strong>요일</p>
+            <p><strong>12</strong>시 <strong>30</strong>분</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-text t5">
+      <div class="content">
+        <div class="absolute-center where">
+          <p class="text-info-where">어디서?</p>
+        </div>
+        <div class="absolute-center here">
+          <p class="text-info-here">바로<br />여기</p>
+        </div>
+        <figure class="img-map"></figure>
+        <div class="point-wrapper">
+          <div class="point-box">
+            <p class="text-place">마리나<br />컨벤션웨딩홀<br /> 1층</p>
+            <p class="text-address">부산 해운대구 해운대해변로 154</p>
+          </div>
+        </div>
+        <!-- <div class="absolute-center svg">
+          <svg>
+            <circle cx="50%" cy="50%" r="50" fill="#3e295e" />
+          </svg>
+          <img src="images/map.jpg" alt="">
+        </div> -->
+
+
+      </div>
+    </section>
+
+    <div style="height:100vh;background:#ddd;">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni explicabo dolorem doloremque sunt rerum atque vitae aperiam ratione? Tempora iste dignissimos dolore aliquid, blanditiis expedita nesciunt quia aperiam hic!
+    </div>
+
   </main>
 
   <!-- gsap strollTrigger -->
