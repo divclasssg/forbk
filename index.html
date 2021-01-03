@@ -121,14 +121,15 @@
   </main>
   <script>
     const height = document.querySelectorAll('.content');
+    const num = 200;
       for (let i = 0; i < height.length; i++) {
-        height[i].style.height = `${innerHeight}px`;
+        height[i].style.height = innerHeight + num + 'px';
       }
       console.log(height)
     window.addEventListener('resize', () => {
       const height = document.querySelectorAll('.content');
       for (let i = 0; i < height.length; i++) {
-        height[i].style.height = `${innerHeight}px`;
+        height[i].style.height = innerHeight + num + 'px';
       }
     });
     window.addEventListener('scroll', () => {
