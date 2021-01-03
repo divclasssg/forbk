@@ -119,6 +119,19 @@
     </div>
 
   </main>
+  <script>
+    const height = document.querySelectorAll('.content');
+      for (let i = 0; i < height.length; i++) {
+        height[i].style.height = `${innerHeight}px`;
+      }
+      console.log(height)
+    window.addEventListener('resize', () => {
+      const height = document.querySelectorAll('.content');
+      for (let i = 0; i < height.length; i++) {
+        height[i].style.height = `${innerHeight}px`;
+      }
+    });
+  </script>
 
   <!-- gsap strollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
