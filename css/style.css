@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-body, html { position: fixed; width: 100%; overflow-x: hidden; transform: translate3d(0,0,0); -webkit-transform: translateZ(0); }
-
 html { font-size: 8px; }
 :root {
   --color-black: #1d1d1f;
@@ -32,8 +30,10 @@ section {
 }
 .content {
   position: relative;
+  /* height: 100vh;
+  min-height: 100vh; */
   height: 100vh;
-  min-height: 100vh;
+  height: var(--vh, 1vh) * 100;
   overflow: hidden;
 }
 .sticky-wrapper {
