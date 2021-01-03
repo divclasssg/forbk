@@ -113,11 +113,12 @@
       scrub: 1,
       pin: true,
       anticipatePin: 1,
-      markers: true
+      // markers: true
     }
   })
   t5.to('.absolute-center.where', {
-    y: -30
+    y: -30,
+    duration: 0.5
   })
   t5.to('.absolute-center.where', {
     opacity: 0
@@ -136,14 +137,15 @@
   t5.fromTo('.img-map', {
     opacity: 0
   }, {
-    opacity: 1
+    opacity: 1,
+    delay: 0.5
   }, 2)
   t5.from('.point-wrapper', {
     opacity: 0,
     top: 50
   })
   t5.to('.point-wrapper', {
-    top: '50%'
+    duration: 3
   })
 
 

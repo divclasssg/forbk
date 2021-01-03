@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+html { font-size: 8px; }
+:root {
+  --color-black: #1d1d1f;
+}
+
+body {
+  font-family: 'Noto Serif KR', "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","Noto Sans KR", "MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+strong {
+  font-weight: 900;
+}
+.main {
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+section {
+  position: relative;
+  height: 100%;
+}
+.content {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.sticky-wrapper {
+  position: relative;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.text-vetical {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 3rem;
+}
+.invitation h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+.invitation p {
+  font-size: 3rem;
+}
+
+.greeting-bk {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background: #111;
+}
+.greeting-bk .content,
+.greeting-sh .greeting-sh-content .sticky {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.greeting-sh {
+  position: relative;
+  width: 100%;
+  margin-top: -100vh;
+  z-index: 2;
+  background: #111;
+}
+.greeting-sh-content {
+  height: 200vh;
+}
+.greeting-sh-content .sticky {
+  overflow: hidden;
+}
+.greeting-bksh {
+  position: relative;
+  background: #111;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.img-groom {
+  position: absolute;
+  bottom: -60px;
+  left: -10%;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bk1.jpg) no-repeat 0 center / contain;
+  /* opacity: 0; */
+}
+.img-bk {
+  object-fit: cover;
+}
+.greeting-groom,
+.greeting-bride {
+  position: relative;
+  font-size: 32px;
+  letter-spacing: 5px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: left;
+  padding-right: 3rem;
+  box-sizing: border-box;
+  z-index: 1;
+  opacity: 0;
+}
+.img-bride {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100vh;
+  background: url(../images/bride1.jpg) no-repeat 0 center / contain;
+}
+
+.section-transition {
+  position: relative;
+}
+.img-bksh {
+  background: url(../images/bksh.jpg) no-repeat 70% center / cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+}
+.greeting-bksh .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.greeting-together {
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  padding: 1.2em 0.4em 0.4em;
+  box-sizing: border-box;
+}
+.info-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+.info-text {
+  font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","Noto Sans KR", "MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.info-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.col {
+  flex-direction: column;
+}
+.text-info-so,
+.text-info-when {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+.text-info-so {
+  font-size: 3rem;
+}
+.text-info-when {
+  font-weight: 700;
+}
+.info-text-when-content {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.info-text-when-content strong {
+  font-size: 4rem;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.absolute-center.where {
+  z-index: 1;
+}
+.absolute-center.here {
+  z-index: 2;
+}
+.absolute-center.svg {
+  width: 100%;
+  height: 100%;
+}
+.absolute-center.svg svg {
+  width: 100%;
+  height: 100%;
+}
+.text-info-where {
+  font-size: 5rem;
+}
+.text-info-here {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.img-map {
+  background: url(../images/map.jpg) no-repeat 50% 50% / cover;
+  height: 100vh;
+}
+.point-wrapper {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+}
+.point-wrapper svg {
+  width: 20px;
+}
+.point-box {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 1em;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-backdrop-filter: saturate(180%) blur(3px);
+  backdrop-filter: saturate(180%) blur(3px);
+  background-color: rgba(0,0,0,0.6);
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+.text-address {
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 1em;
+}
