@@ -108,6 +108,20 @@
 
   </main>
 
+  <script>
+    function setHeight() {
+      const setHeightElem = document.querySelectorAll('.content');
+      for (let i = 0; i < setHeightElem.length; i++) {
+        setHeightElem[i].style.height = `${innerHeight}px`;
+      }
+    }
+
+    window.onload = () => {
+      setHeight();
+    }
+    window.addEventListener('resize', setHeight);
+  </script>
+
   <!-- gsap strollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>

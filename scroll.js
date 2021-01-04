@@ -20,12 +20,13 @@
   gsap.to(".greeting-groom", {
     scrollTrigger: {
       trigger: '.t0',
-      start: 'center center',
+      start: 'top top',
       end: () => '+=' + innerHeight,
+      // end: 'bottom bottom',
       scrub: 1,
       pin: true,
       anticipatePin: 1,
-      // markers: true
+      markers: true
     },
     opacity: 1,
     y: -10
@@ -34,7 +35,7 @@
   gsap.to(".greeting-bride", {
     scrollTrigger: {
       trigger: '.t1',
-      start: 'center center',
+      start: 'top top',
       end: 'top bottom',
       scrub: 1,
       pin: true,
@@ -49,7 +50,7 @@
     scrollTrigger: {
       trigger: '.t2',
       start: 'center center',
-      end: () => '+=' + innerHeight * 2,
+      end: () => '+=' + innerHeight * 3,
       scrub: 1,
       pin: true,
       // markers: true
