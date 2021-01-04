@@ -45,6 +45,7 @@ section {
   height: var(--vh, 1vh) * 120; */
   height: 110vh;
   overflow: hidden;
+  transition: height .15s;
 }
 .sticky-wrapper {
   position: relative;
