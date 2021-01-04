@@ -41,7 +41,7 @@ const t0 = document.querySelector('.aaa');
       scrub: 1,
       pin: true,
       anticipatePin: 1,
-      markers: true
+      // markers: true
     },
     opacity: 1,
     y: -10
@@ -111,7 +111,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t5',
       start: 'center center',
-      end: 'bottom' + '+=' + innerHeight * 4,
+      end: 'bottom' + '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
       anticipatePin: 1,
