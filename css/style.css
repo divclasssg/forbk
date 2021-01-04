@@ -44,7 +44,7 @@ section {
   /* height: 120vh;
   height: var(--vh, 1vh) * 120; */
   /* height: 110vh; */
-  height: calc(100 * var(--vh));
+  /* height: calc(100 * var(--vh)); */
   overflow: hidden;
   transition: height .15s;
 }

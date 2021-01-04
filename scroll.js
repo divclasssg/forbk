@@ -15,11 +15,12 @@ function scrollEvent() {
   // t0.from('.greeting.groom', {color: '#1d1d1f', duration: 0.1}, 0)
   // t0.from('.greeting.groom .greeting-text-1', {transform: 'scale(0)', height:0}, 0)
   // t0.to('.greeting.groom', {y: -innerHeight, opacity: 0})
-
+const t0 = document.querySelector('.t0');
   gsap.to(".greeting-groom", {
     scrollTrigger: {
       trigger: '.t0',
-      start: 'top top',
+      start: () => t0.offsetHeight,
+      // start: 'top top',
       end: () => '+=' + innerHeight,
       // end: 'bottom bottom',
       scrub: 1,
@@ -152,4 +153,4 @@ function scrollEvent() {
 window.onload = () => {
   scrollEvent();
 }
-window.addEventListener('resize', scrollEvent);
+// window.addEventListener('resize', scrollEvent);
