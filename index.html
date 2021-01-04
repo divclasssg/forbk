@@ -10,18 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/resest.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script>
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-    window.addEventListener('touchend', () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-  </script> -->
 </head>
 <body>
   <main class="main">
@@ -119,26 +107,6 @@
     </div>
 
   </main>
-  <script>
-    const height = document.querySelectorAll('.content');
-    const num = 200;
-      for (let i = 0; i < height.length; i++) {
-        height[i].style.height = innerHeight + num + 'px';
-      }
-      console.log(height)
-    window.addEventListener('resize', () => {
-      const height = document.querySelectorAll('.content');
-      for (let i = 0; i < height.length; i++) {
-        height[i].style.height = innerHeight + num + 'px';
-      }
-    });
-    // window.addEventListener('scroll', () => {
-    //   const height = document.querySelectorAll('.content');
-    //   for (let i = 0; i < height.length; i++) {
-    //     height[i].style.height = `${innerHeight}px`;
-    //   }
-    // });
-  </script>
 
   <!-- gsap strollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
