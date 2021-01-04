@@ -109,17 +109,23 @@
   </main>
 
   <script>
-    function setHeight() {
-      const setHeightElem = document.querySelectorAll('.content');
-      for (let i = 0; i < setHeightElem.length; i++) {
-        setHeightElem[i].style.height = `${innerHeight + 50}px`;
-      }
-    }
+    // function setHeight() {
+    //   const setHeightElem = document.querySelectorAll('.content');
+    //   for (let i = 0; i < setHeightElem.length; i++) {
+    //     setHeightElem[i].style.height = `${innerHeight}px`;
+    //   }
+    // }
 
+    // window.onload = () => {
+    //   setHeight();
+    // }
+    // window.addEventListener('resize', setHeight);
     window.onload = () => {
-      setHeight();
+      document.querySelector(':root').style.setProperty('--vh', window.innerHeight/100 + 'px');
     }
-    window.addEventListener('resize', setHeight);
+    window.addEventListener('resize', () => {
+      document.querySelector(':root').style.setProperty('--vh', window.innerHeight/100 + 'px');
+    })
   </script>
 
   <!-- gsap strollTrigger -->
