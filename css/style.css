@@ -1,12 +1,12 @@
 @charset "utf-8";
-body {
+/* body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 
 html {
   height: -webkit-fill-available;
-}
+} */
 html { font-size: 8px; width: 100%;height:100%;}
 :root {
   --color-black: #1d1d1f;
@@ -39,18 +39,12 @@ section {
 }
 .content {
   position: relative;
-  /* height: 100vh;
-  min-height: 100vh; */
-  /* height: 120vh;
-  height: var(--vh, 1vh) * 120; */
-  /* height: 110vh; */
-  /* height: calc(100 * var(--vh)); */
   height: 120vh;
   overflow: hidden;
-  transition: height .15s;
 }
 .sticky-wrapper {
   position: relative;
+  height: 100%;
 }
 .sticky {
   position: -webkit-sticky;
@@ -68,8 +62,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  padding: 0 3rem;
+  height: 100%;
+  padding: 5rem 3rem;
 }
 .invitation h1 {
   font-size: 5rem;
@@ -79,6 +73,9 @@ section {
   font-size: 3rem;
 }
 
+.greeting {
+  height: 100%;
+}
 .greeting-bk {
   position: relative;
   width: 100%;
@@ -86,7 +83,7 @@ section {
   z-index: 3;
   background: #111;
 }
-.greeting-bk .content,
+.greeting-bk .sticky,
 .greeting-sh .greeting-sh-content .sticky {
   display: flex;
   align-items: center;
@@ -114,11 +111,9 @@ section {
 }
 .img-groom {
   position: absolute;
-  bottom: -60px;
+  bottom: 0;
   left: -10%;
-  width: 100%;
-  height: 100%;
-  background: url(../images/bk1.jpg) no-repeat 0 center / contain;
+  width: 70%;
   /* opacity: 0; */
 }
 .img-bk {
@@ -142,8 +137,6 @@ section {
   top: 0;
   left: 0;
   width: 120%;
-  height: 100%;
-  background: url(../images/bride1.jpg) no-repeat 0 center / contain;
 }
 
 .section-transition {

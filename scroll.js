@@ -19,8 +19,8 @@ const t0 = document.querySelector('.aaa');
   gsap.to(".greeting-groom", {
     scrollTrigger: {
       trigger: '.t0',
-      start: () => t0.offsetHeight,
-      // start: 'top 10%',
+      // start: () => t0.offsetHeight,
+      start: 'top top',
       end: () => '+=' + innerHeight,
       // end: 'bottom bottom',
       scrub: 1,
