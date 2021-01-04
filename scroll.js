@@ -1,5 +1,4 @@
-(() => {
-
+function scrollEvent() {
   // t0
   // let t0 = gsap.timeline({
   //   scrollTrigger: {
@@ -148,7 +147,9 @@
   t5.to('.point-wrapper', {
     duration: 3
   })
+}
 
-
-
-})();
+window.onload = () => {
+  scrollEvent();
+}
+window.addEventListener('resize', scrollEvent);
