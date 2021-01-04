@@ -51,7 +51,7 @@ section {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 .text-vetical {
   writing-mode: vertical-lr;
@@ -83,7 +83,7 @@ section {
   z-index: 3;
   background: #111;
 }
-.greeting-bk .sticky,
+.greeting-bk .content,
 .greeting-sh .greeting-sh-content .sticky {
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ section {
   background: #111;
 }
 .greeting-sh-content {
-  height: 200vh;
+  height: 240vh;
 }
 .greeting-sh-content .sticky {
   overflow: hidden;
@@ -111,9 +111,9 @@ section {
 }
 .img-groom {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: -10%;
-  width: 70%;
+  width: 100%;
   /* opacity: 0; */
 }
 .img-bk {
@@ -131,6 +131,7 @@ section {
   box-sizing: border-box;
   z-index: 1;
   opacity: 0;
+  margin-top: -25rem;
 }
 .img-bride {
   position: absolute;
@@ -178,6 +179,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-top: -10vh;
 }
 .col {
   flex-direction: column;
@@ -235,7 +237,7 @@ section {
 }
 .point-wrapper {
   position: absolute;
-  top: 5%;
+  top: 20vh;
   left: 5%;
 
 }
