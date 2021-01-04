@@ -149,6 +149,41 @@ const t0 = document.querySelector('.aaa');
   t5.to('.point-wrapper', {
     duration: 3
   })
+
+  let t6 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.t6',
+      start: 'top top',
+      end: 'bottom' + '+=' + innerHeight * 2,
+      scrub: 1,
+      pin: true,
+      // markers: true
+    }
+  })
+  t6.from('.grid-item:nth-child(1)', {
+    opacity: 0,
+    x: -100,
+    y: -100
+  }, 0)
+  t6.from('.grid-item:nth-child(2)', {
+    opacity: 0,
+    y: -100
+  }, 0)
+  t6.from('.grid-item:nth-child(3)', {
+    opacity: 0,
+    x: 100
+  }, 0)
+  t6.from('.grid-item:nth-child(4)', {
+    opacity: 0,
+    x: -100
+  }, 0)
+  t6.to('.grid-container', {
+    y: 50
+  }, 1)
+  t6.from('.content.t6 p', {
+    opacity: 0,
+    y: 100
+  }, 1)
 }
 
 window.onload = () => {
