@@ -111,7 +111,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t5',
       start: 'center center',
-      end: 'bottom' + '+=' + innerHeight * 5,
+      end: 'bottom' + '+=' + innerHeight * 4,
       scrub: 1,
       pin: true,
       anticipatePin: 1,
@@ -147,43 +147,100 @@ const t0 = document.querySelector('.aaa');
     top: 50
   })
   t5.to('.point-wrapper', {
-    duration: 3
+    duration: 1
   })
 
   let t6 = gsap.timeline({
     scrollTrigger: {
       trigger: '.t6',
       start: 'top top',
-      end: 'bottom' + '+=' + innerHeight * 2,
+      end: 'bottom' + '+=' + innerHeight * 1,
       scrub: 1,
       pin: true,
       // markers: true
     }
   })
-  t6.from('.grid-item:nth-child(1)', {
+  t6.from('.album-item.img-01', {
     opacity: 0,
-    x: -100,
+    scale: 10,
     y: -100
   }, 0)
-  t6.from('.grid-item:nth-child(2)', {
-    opacity: 0,
-    y: -100
-  }, 0)
-  t6.from('.grid-item:nth-child(3)', {
-    opacity: 0,
-    x: 100
-  }, 0)
-  t6.from('.grid-item:nth-child(4)', {
+  t6.from('.album-item.img-02', {
     opacity: 0,
     x: -100
   }, 0)
-  t6.to('.grid-container', {
-    y: 50
+  t6.from('.album-item.img-03', {
+    opacity: 0,
+    scale: 2,
+    x: 100
+  }, 0)
+  t6.from('.album-item.img-04', {
+    opacity: 0,
+    scale: 1.5,
+    y: 100
+  }, 0)
+  t6.from('.album-item.img-05', {
+    opacity: 0,
+    x: 100,
+    y: 100
+  }, 0)
+  t6.from('.t6 .info-text', {
+    opacity: 0,
+    y: 10
   }, 1)
-  t6.from('.content.t6 p', {
+
+  let t7 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.t7',
+      start: 'top 30%',
+      end: 'bottom' + '+=' + innerHeight * 1,
+      scrub: 1,
+      pin: true,
+      markers: true
+    }
+  })
+  t7.from('.t7 .text-bottom', {
+    opacity: 0,
+    y: 10
+  })
+  t7.to('.t7 .text-top', {
+    color: '#6e6e73'
+  }, 0)
+  t7.from('.t7 .img-well', {
     opacity: 0,
     y: 100
-  }, 1)
+  }, 0)
+  t7.to('.t7 .img-well', {
+    width: '100vw'
+  })
+
+  let start = 0;
+  let frame = 261;
+
+  let fw = [];
+  for (let i = 0; i < frame; i++) {
+    fw.push(`farewell_${i}`)
+  }
+
+
+  let count = parseInt(fw)
+  console.log(count)
+
+  let t8 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.t8',
+      start: 'top top',
+      end: 'bottom' + '+=' + innerHeight * 5,
+      scrub: 1,
+      pin: true,
+      markers: true
+    }
+  })
+  t8.to('.t8 figure', {
+    backgroundImage: `url(images/video/farewell_0.0261.jpg`,
+    duration: 10
+  })
+
 }
 
 window.onload = () => {

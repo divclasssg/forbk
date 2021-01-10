@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="css/resest.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="before-load">
+  <div class="loading">
+		<svg class="loading-circle">
+			<circle cx="50%" cy="50%" r="25"></circle>
+		</svg>
+	</div>
   <main class="main">
     <section>
       <div class="content">
@@ -25,14 +30,12 @@
     <section class="greeting">
       <div class="greeting-bk t0">
         <div class="content">
-            <figure class="img-groom">
-              <img src="images/bk1.jpg" alt="">
-            </figure>
-            <h1 class="greeting-groom text-vetical">
-              신랑<br /><strong>정부길</strong>
-            </h1>
-
-
+          <figure class="img-groom">
+            <img src="images/bk1.jpg" alt="">
+          </figure>
+          <h1 class="greeting-groom text-vetical">
+            신랑<br /><strong>정부길</strong>
+          </h1>
         </div>
       </div>
 
@@ -49,7 +52,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="section-transition">
       <div class="greeting-bksh t2">
@@ -73,7 +75,7 @@
       </div>
     </section>
 
-    <section class="info-text t4" style="background:#f1f1f1;">
+    <section class="info-text t4">
       <div class="content ">
         <div class="info-text-wrapper col">
           <div class="info-text-when-content">
@@ -109,21 +111,43 @@
       </div>
     </section>
 
-    <div class="">
-      <div class="content t6" style="height: 100vh;padding-top: 50px;">
-        <p>축하해주셈!!!</p>
-        <section class="grid-container">
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-        </section>
+    <section class="t6" style="padding-top: 80px;">
+      <div class="content">
+        <p class="info-text">축하해주세요!!</p>
+        <ul class="album-wrapper">
+          <li class="album-item img-01">
+            <figure class="album-img"></figure>
+          </li>
+          <li class="album-item img-02">
+            <figure class="album-img"></figure>
+          </li>
+          <li class="album-item img-03">
+            <figure class="album-img"></figure>
+          </li>
+          <li class="album-item img-04">
+            <figure class="album-img"></figure>
+          </li>
+          <li class="album-item img-05">
+            <figure class="album-img"></figure>
+          </li>
+        </ul>
       </div>
+    </section>
 
-    </div>
+    <section class="t7">
+      <div class="content" style="height: 100%;">
+        <div class="text-wrapper">
+          <p class="info-text text-top">우리 잘 살께요.</p>
+          <p class="info-text text-bottom">이렇게요.</p>
+        </div>
+        <figure class="img-well"></figure>
+      </div>
+    </section>
 
+    <section class="t8">
+      <figure style="background-image: url(images/video/farewell_0.jpg)"></figure>
+      <p class="info-text">부길아<br />결혼<br /> 축하한돠!!!</p>
+    </section>
 
     <div style="height:100vh;background:#ddd;">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni explicabo dolorem doloremque sunt rerum atque vitae aperiam ratione? Tempora iste dignissimos dolore aliquid, blanditiis expedita nesciunt quia aperiam hic!
@@ -131,20 +155,14 @@
 
   </main>
 
-  <!-- <script>
-    function setHeight() {
-      const setHeightElem = document.querySelectorAll('.content');
-      for (let i = 0; i < setHeightElem.length; i++) {
-        setHeightElem[i].style.height = `${innerHeight}px`;
-      }
-    }
-
-    window.onload = () => {
-      setHeight();
-    }
-    setHeight();
-    window.addEventListener('resize', setHeight);
-  </script> -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.remove('before-load');
+      document.querySelector('.loading').addEventListener('transitionend', (e) => {
+  			document.body.removeChild(e.currentTarget);
+  		});
+    });
+  </script>
 
   <!-- gsap strollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
