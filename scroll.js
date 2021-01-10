@@ -237,7 +237,7 @@ const t0 = document.querySelector('.aaa');
     }
   })
   t8.to('.t8 figure', {
-    backgroundImage: `url(images/video/farewell_0.0261.jpg`,
+    backgroundImage: `url(images/video/farewell_0.009.jpg`,
     duration: 10
   })
 
