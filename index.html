@@ -160,7 +160,18 @@
   </main>
 
   <script>
+    let frame = 261;
+    const videoImage = [];
+    function imgLoad() {
+      for (let i = 0; i < frame; i++) {
+        let imgElem = new Image();
+        imgElem.src = `images/video/farewell_0.0${001 + i}.jpg`;
+        videoImage.push(imgElem);
+      }
+    }
+
     window.addEventListener('load', () => {
+      imgLoad();
       document.body.classList.remove('before-load');
       document.querySelector('.loading').addEventListener('transitionend', (e) => {
   			document.body.removeChild(e.currentTarget);
