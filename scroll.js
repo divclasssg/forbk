@@ -196,7 +196,7 @@ const t0 = document.querySelector('.aaa');
       end: 'bottom' + '+=' + innerHeight * 1,
       scrub: 1,
       pin: true,
-      markers: true
+      // markers: true
     }
   })
   t7.from('.t7 .text-bottom', {
@@ -214,17 +214,6 @@ const t0 = document.querySelector('.aaa');
     width: '100vw'
   })
 
-  let start = 0;
-  let frame = 261;
-
-  let fw = [];
-  for (let i = 0; i < frame; i++) {
-    fw.push(`farewell_${i}`)
-  }
-
-
-  let count = parseInt(fw)
-  console.log(count)
 
   let t8 = gsap.timeline({
     scrollTrigger: {
@@ -236,9 +225,12 @@ const t0 = document.querySelector('.aaa');
       markers: true
     }
   })
-  t8.to('.t8 figure', {
-    backgroundImage: `url(images/video/farewell_0.009.jpg`,
+  t8.to('.t8 figure img', {
+    attr: {src: `images/video/farewell_0.009.jpg`},
     duration: 10
+  })
+  t8.to('.t8 figure', {
+    opacity: 0
   })
 
 }

@@ -388,11 +388,14 @@ section {
 }
 
 .t8 figure {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.t8 figure img {
+  width: 100vh;
+  object-fit: cover;
 }
 .t8 .info-text {
   position: absolute;
