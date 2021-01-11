@@ -160,12 +160,12 @@
   </main>
 
   <script>
-    let frame = 261;
+    let frame = 0.0261;
     const videoImage = [];
     function imgLoad() {
       for (let i = 0; i < frame; i++) {
         let imgElem = new Image();
-        imgElem.src = `images/video/farewell_0.0${001 + i}.jpg`;
+        imgElem.src = `images/video/farewell_${i + 0.0001}.jpg`;
         videoImage.push(imgElem);
       }
     }
