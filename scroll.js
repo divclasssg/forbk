@@ -226,7 +226,7 @@ const t0 = document.querySelector('.aaa');
     }
   })
   t9.to('.t9 figure img', {
-    attr: {src: `images/video/farewell_0.0241.jpg`},
+    attr: {src: `https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/video/farewell_0.0241.jpg`},
     duration: 10
   }, 0)
   t9.to('.t9 .info-text', {
