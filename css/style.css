@@ -425,6 +425,14 @@ section {
   color: #fff;
   text-align: center;
 }
+.t9 .smile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  opacity: 0;
+}
 
 .link-mobile {
   background: #111;

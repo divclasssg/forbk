@@ -234,12 +234,14 @@ const t0 = document.querySelector('.aaa');
     y: 50,
     scale: 10,
     opacity: 0,
-    duration: 2,
+    duration: 6,
     delay: 0.15
   }, 0)
-  // t9.to('.t9 figure', {
-  //   opacity: 0
-  // })
+  t9.to('.t9 .smile', {
+    opacity: 1,
+    y: -10,
+    delay: 8
+  }, 0)
 
 }
 
