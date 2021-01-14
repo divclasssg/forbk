@@ -146,29 +146,40 @@
 
     <section class="t8">
       <div class="content">
-        <figure>
-          <img src="images/video/farewell_0.0001.jpg" alt="">
-        </figure>
-        <p class="info-text">부길아<br />결혼<br /> 축하한돠!!!</p>
+        <p class="info-text">마지막으로...</p>
       </div>
     </section>
 
-    <div style="height:100vh;background:#ddd;">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni explicabo dolorem doloremque sunt rerum atque vitae aperiam ratione? Tempora iste dignissimos dolore aliquid, blanditiis expedita nesciunt quia aperiam hic!
-    </div>
+    <section class="t9">
+      <div class="content">
+        <figure>
+          <img src="images/video/farewell_0.0001.jpg" alt="">
+        </figure>
+        <p class="info-text">부길아<br />결혼<br />축하한돠<br />!!!</p>
+      </div>
+    </section>
+
+    <section class="link-mobile">
+      <div class="content">
+        <p class="">자세한 내용은<br />모바일 청첩장을<br />확인해주세요.</p>
+        <a href="#" class="info-text">모바일 청첩장 바로가기</a>
+      </div>
+    </section>
 
   </main>
 
   <script>
-    let frame = 0.0261;
+    let frame = 242;
     const videoImage = [];
     function imgLoad() {
       for (let i = 0; i < frame; i++) {
         let imgElem = new Image();
-        imgElem.src = `images/video/farewell_${i + 0.0001}.jpg`;
+        imgElem.src = `images/video/farewell_${i / 10000}.jpg`;
+        console.log(i);
         videoImage.push(imgElem);
       }
     }
+    // imgLoad();
 
     window.addEventListener('load', () => {
       imgLoad();

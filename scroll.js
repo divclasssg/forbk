@@ -215,23 +215,31 @@ const t0 = document.querySelector('.aaa');
   })
 
 
-  let t8 = gsap.timeline({
+  let t9 = gsap.timeline({
     scrollTrigger: {
-      trigger: '.t8',
+      trigger: '.t9',
       start: 'top top',
-      end: 'bottom' + '+=' + innerHeight * 5,
+      end: 'bottom' + '+=' + innerHeight * 8,
       scrub: 1,
       pin: true,
-      markers: true
+      // markers: true
     }
   })
-  t8.to('.t8 figure img', {
-    attr: {src: `images/video/farewell_0.0261.jpg`},
+  t9.to('.t9 figure img', {
+    attr: {src: `images/video/farewell_0.0241.jpg`},
     duration: 10
-  })
-  t8.to('.t8 figure', {
-    opacity: 0
-  })
+  }, 0)
+  t9.to('.t9 .info-text', {
+    x: 50,
+    y: 50,
+    scale: 10,
+    opacity: 0,
+    duration: 2,
+    delay: 0.15
+  }, 0)
+  // t9.to('.t9 figure', {
+  //   opacity: 0
+  // })
 
 }
 
