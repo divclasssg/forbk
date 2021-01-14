@@ -194,7 +194,7 @@ section {
   z-index: 2;
 }
 .img-bksh {
-  background: url(../images/bksh.jpg) no-repeat 70% center / cover;
+  background: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/bksh.jpg) no-repeat 70% center / cover;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -282,7 +282,7 @@ section {
   line-height: 1;
 }
 .img-map {
-  background: url(../images/map.jpg) no-repeat 50% 50% / cover;
+  background: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/map.jpg) no-repeat 50% 50% / cover;
   height: 100%;
 }
 .point-wrapper {
@@ -353,19 +353,19 @@ section {
   /* border-radius: 25px; */
 }
 .album-item.img-01 .album-img {
-  background-image: url(../images/img5.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img5.jpg);
 }
 .album-item.img-02 .album-img {
-  background-image: url(../images/img2.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img2.jpg);
 }
 .album-item.img-03 .album-img {
-  background-image: url(../images/img4.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img4.jpg);
 }
 .album-item.img-04 .album-img {
-  background-image: url(../images/img6.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img6.jpg);
 }
 .album-item.img-05 .album-img {
-  background-image: url(../images/img1.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img1.jpg);
 }
 
 .t7 .text-wrapper {
@@ -382,7 +382,7 @@ section {
   font-weight: bold;
 }
 .t7 .img-well {
-  background: url(../images/img3.jpg) no-repeat center center / cover;
+  background: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img3.jpg) no-repeat center center / cover;
   width: 80vw;
   height: 100vw;
   margin-top: 50px;
