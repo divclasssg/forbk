@@ -77,14 +77,14 @@ const t0 = document.querySelector('.aaa');
       start: 'center center',
       end: () => '+=' + innerHeight * 0.5,
       scrub: 1,
-      pin: true,
-      anticipatePin: 1,
+      // pin: true,
+      // anticipatePin: 1,
       // markers: true
     }
   })
-  t3.to('.info-transition', {
-    opacity: 1
-  }, 0)
+  // t3.to('.info-transition', {
+  //   opacity: 1
+  // }, 0)
   t3.to('.text-info-so, .text-info-when', {
     y: -30
   }, 0)
@@ -95,14 +95,14 @@ const t0 = document.querySelector('.aaa');
       start: 'center center',
       end: () => '+=' + innerHeight * 1,
       scrub: 1,
-      pin: true,
-      anticipatePin: 1,
+      // pin: true,
+      // anticipatePin: 1,
       // markers: true
     }
   })
-  t4.from('.info-text-when-content', {
-    opacity: 0
-  })
+  // t4.from('.info-text-when-content', {
+  //   opacity: 0
+  // })
   t4.to('.info-text-when-content', {
     y: -30
   })

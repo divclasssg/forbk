@@ -191,6 +191,7 @@ section {
 
 .section-transition {
   position: relative;
+  z-index: 2;
 }
 .img-bksh {
   background: url(../images/bksh.jpg) no-repeat 70% center / cover;
@@ -218,7 +219,7 @@ section {
   height: 100%;
   background: #fff;
   z-index: 1;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .info-text {
   font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","Noto Sans KR", "MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -228,7 +229,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: -10vh;
+  /* margin-top: -10vh; */
 }
 .col {
   flex-direction: column;
