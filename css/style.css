@@ -182,11 +182,15 @@ section {
   opacity: 0;
   margin-top: -25rem;
 }
+.greeting-bride {
+  opacity: 1;
+}
 .img-bride {
   position: absolute;
   top: 0;
   left: 0;
   width: 120%;
+  opacity: 0;
 }
 
 .section-transition {
@@ -383,7 +387,7 @@ section {
 }
 .t7 .img-well {
   background: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img3.jpg) no-repeat center center / cover;
-  width: 80vw;
+  width: 100vw;
   height: 100vw;
   margin-top: 50px;
 }
@@ -435,6 +439,8 @@ section {
 }
 
 .link-mobile {
+  position: relative;
+  top: -1px;
   background: #111;
 }
 .link-mobile .content {

@@ -21,7 +21,7 @@ const t0 = document.querySelector('.aaa');
       trigger: '.t0',
       // start: () => t0.offsetHeight,
       start: 'top top',
-      end: () => '+=' + innerHeight,
+      end: () => '+=' + innerHeight * 5,
       // end: 'bottom bottom',
       scrub: 1,
       pin: true,
@@ -32,26 +32,25 @@ const t0 = document.querySelector('.aaa');
     y: -10
   });
 
-  gsap.to(".greeting-bride", {
+  gsap.to(".img-bride", {
     scrollTrigger: {
       trigger: '.t1',
       start: 'top top',
       end: 'top bottom',
-      // end: () => '+=' + innerHeight,
+      // end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
       anticipatePin: 1,
       // markers: true
     },
-    opacity: 1,
-    y: -10
+    opacity: 1
   });
 
   gsap.to(".img-bksh", {
     scrollTrigger: {
       trigger: '.t2',
       start: 'center center',
-      end: () => '+=' + innerHeight * 3,
+      end: () => '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
       // markers: true
@@ -75,7 +74,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t3',
       start: 'center center',
-      end: () => '+=' + innerHeight * 0.5,
+      end: () => '+=' + innerHeight,
       scrub: 1,
       // pin: true,
       // anticipatePin: 1,
@@ -111,7 +110,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t5',
       start: 'center center',
-      end: 'bottom' + '+=' + innerHeight * 4,
+      end: 'bottom' + '+=' + innerHeight * 10,
       scrub: 1,
       pin: true,
       anticipatePin: 1,
@@ -154,7 +153,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t6',
       start: 'top top',
-      end: 'bottom' + '+=' + innerHeight * 1,
+      end: 'bottom' + '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
       // markers: true
@@ -193,7 +192,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t7',
       start: 'top 30%',
-      end: 'bottom' + '+=' + innerHeight * 1,
+      end: 'bottom' + '+=' + innerHeight * 5,
       scrub: 1,
       pin: true,
       // markers: true
@@ -219,7 +218,7 @@ const t0 = document.querySelector('.aaa');
     scrollTrigger: {
       trigger: '.t9',
       start: 'top top',
-      end: 'bottom' + '+=' + innerHeight * 8,
+      end: 'bottom' + '+=' + innerHeight * 10,
       scrub: 1,
       pin: true,
       // markers: true
