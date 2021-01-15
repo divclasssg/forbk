@@ -185,8 +185,9 @@ const t0 = document.querySelector('.aaa');
   }, 0)
   t6.from('.t6 .info-text', {
     opacity: 0,
-    y: 10
-  }, 1)
+    y: 10,
+    delay: 0.35
+  }, 0)
 
   let t7 = gsap.timeline({
     scrollTrigger: {

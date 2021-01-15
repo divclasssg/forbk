@@ -88,6 +88,8 @@ section {
 }
 .content {
   position: relative;
+  max-width: 860px;
+  margin: 0 auto;
   height: 120vh;
   overflow: hidden;
 }
@@ -384,6 +386,7 @@ section {
 .t7 .info-text {
   font-size: 4rem;
   font-weight: bold;
+  text-align: right;
 }
 .t7 .img-well {
   background: url(https://cdn.jsdelivr.net/gh/divclasssg/forbk/images/img3.jpg) no-repeat center center / cover;
@@ -466,3 +469,26 @@ section {
   padding: 12px 22px;
   margin-top: 3rem;
 }
+
+/* @media screen and (min-width: 1024px) {
+  .content {
+    width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .t7 .img-well {
+    width: 35vw;
+    height: 50vh;
+  }
+
+  .t9 .content {
+    width: 100%;
+  }
+  .t9 figure {
+    width: 100%;
+  }
+  .t9 figure img {
+    width: 100%;
+  }
+} */
